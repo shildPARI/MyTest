@@ -1,41 +1,76 @@
-# Prerequisites
-*.d
+# --- Build-Ordner ---
+build/
+build-*/
+out/
+bin/
+lib/
+dist/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
 
-# Compiled Object files
-*.slo
-*.lo
+# --- Compiler-Zwischendateien ---
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
+*.lo
 *.la
 *.a
 *.lib
-
-# Executables
+*.so
+*.dll
+*.dylib
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# --- Debug/Profiler ---
+*.pdb
+*.idb
+*.gcda
+*.gcno
+*.gcov
+*.stackdump
+*.mem
+*.log
+*.dSYM/
+
+# --- Editor- & IDE-Dateien ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# CLion / JetBrains
+.idea/
+cmake-build*/
+
+# Visual Studio (optional, falls mal geöffnet)
+*.VC.db
+*.VC.opendb
+
+# --- OS-spezifisches ---
+# macOS
+.DS_Store
+.AppleDouble
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+# Linux
+*~
+
+# --- Backup / Temp ---
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+*.log
+*.old
+
+# --- Test Outputs ---
+/tests/output/
+*.testresult
